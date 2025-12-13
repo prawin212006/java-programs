@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class MiniATM {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        double balance = 10000; // Initial balance
+        int choice;
+        
+        System.out.println("===== MINI ATM =====");
+        System.out.println("1. Check Balance");
+        System.out.println("2. Deposit Money");
+        System.out.println("3. Withd
