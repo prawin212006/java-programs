@@ -1,0 +1,5 @@
+public class Address {
+    public static void main(String[] args) {
+        System.out.println("No.12, Anna Nagar\nChennai\nTamil Nadu\nIndia");
+    }
+}
