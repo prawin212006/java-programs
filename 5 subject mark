@@ -1,0 +1,9 @@
+public class Marks {
+    public static void main(String[] args) {
+        System.out.println("Maths: 85");
+        System.out.println("Science: 78");
+        System.out.println("English: 88");
+        System.out.println("Computer: 92");
+        System.out.println("Tamil: 80");
+    }
+}
