@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class PrintFraction {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a fractional number: ");
+        float num = sc.nextFloat();
+
+        System.out.println("Given fractional number is: " + num);
+
+        sc.close();
+    }
+}
