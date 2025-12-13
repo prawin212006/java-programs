@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ATMPinCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int storedPin = 1234;  
+        double balance = 10000; 
+     
+        System.out.print("Enter your ATM PIN: ");
+        int enteredPin = sc.nextInt();
+        
+        if (enteredPin == storedPin) {
+            System.out.println("PIN verified successfully.");
+            
+            System.out.print("Enter amount to withdraw: ₹");
+            double withdraw = sc.nextDouble();
+            
+            if (withdraw > 0 && withdraw <= balance) {
+                balance -= withdraw;
+                System.out.println("Please collect your cash.");
+                System.out.println("Remaining balance: ₹" + balance);
+            } else {
+                System.out.println("Invalid withdrawal amount or insufficient balance.");
+            }
+            
+        } else {
+            System.out.print
