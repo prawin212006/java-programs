@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class FeverCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);        
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double temperature = sc.nextDouble();
+        if (temperature > 100) {
+            System.out.println("Fever detected!");
+        } else if (temperature >= 0) {
+            System.out.println("No fever.");
+        } else {
+            System.out.println("Invalid temperature entered.");
+        }
+        
+        sc.close();
+    }
+}
