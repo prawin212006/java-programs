@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class ElectricityBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // Input number of units consumed
+        System.out.print("Enter number of units consumed: ");
+        int units = sc.nextInt();
+        
+        double bill = 0;
+        
+        if (units < 0) {
+            System.out.println("Invalid number of units.");
+            sc.close();
+            return;
+        }
+        
+       
+        if (units <= 100) {
+            bill = 0; // Free
+        } else if (units <= 300) {
+            bill = (units - 100) * 5; // ₹5 per unit above 100
+        } else {
+            bill = (200 * 5) + ((units - 300) * 10); // ₹5 for 101–300, ₹10 for >300
+        }
+       
+        if (units > 500) {
+            double surcharge = 0.10 * bill; // 10% surcharge
+            bill += surcharge;
+            System.out.println("Surcharge applied: ₹" + surcharge);
+         }
+        System.out.println("Total electricity bill: ₹" + bill);
+        
+        sc.close();
+    }
+}
