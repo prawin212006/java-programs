@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class LastDigit {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       
+        System.out.print("Enter a number: ");
+        int N = sc.nextInt();
+        
+       
+        int lastDigit = Math.abs(N % 10); // Using Math.abs to handle negative numbers
+        
+       
+        System.out.println("The last digit of " + N + " is: " + lastDigit);
+        
+        sc.close();
+    }
+}
